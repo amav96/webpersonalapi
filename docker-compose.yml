@@ -1,0 +1,22 @@
+version: "3.7"
+
+services:
+  webpersonal:
+    container_name: webpersonal
+    build:
+      context: .
+      dockerfile: dockerfile
+    command: sh /var/www/html/node_start.sh
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - 3000:3000
+
+    working_dir: /var/www/html
+    networks:
+      - mongodb_net
+networks:
+  mongodb_net:
+    external: true
+    name: mongodb_net
+
