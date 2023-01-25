@@ -3,7 +3,7 @@ const DB_PASSWORD = "admin123456";
 const DB_HOST = "webpersonalapi.c8a1cyo.mongodb.net";
 
 const API_VERSION="v1";
-const IP_SERVER="localhost";
+const IP_SERVER="172.31.58.17";
 
 const JWT_SECRET_KEY = "0bPssuvOcRmDN0OPklAWlg7r7.NdMbz";
 

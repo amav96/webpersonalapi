@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const { DB_USER, DB_HOST, DB_PASSWORD, IP_SERVER, API_VERSION} = require("./constants")
+const { API_VERSION} = require("./constants")
 
 const app = express();
 
