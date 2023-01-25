@@ -9,6 +9,7 @@ const PostSchema = mongoose.Schema({
         unique: true,
     },
     created_at: Date,
+    content: String
 });
 
 PostSchema.plugin(mongoosePaginate);

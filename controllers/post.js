@@ -4,7 +4,7 @@ const image = require("../utils/image");
 const save = (req,res) => {
     const post = new Post(req.body);
     post.created_at = new Date();
-
+    
     const imagePath = image.getFilePath(req.files.miniature);
     post.miniature = imagePath;
 

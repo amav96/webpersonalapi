@@ -2,7 +2,7 @@ const Menu = require("../models/menu");
 
 const save = (req,res) => {
     const menu = new Menu(req.body);
-
+    console.log(menu)
     menu.save((error, menuStored) => {
         if(error){
         res.status(400).send({msg: 'Ha ocurrido un error'})
